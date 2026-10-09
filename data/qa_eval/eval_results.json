@@ -1,0 +1,12 @@
+{
+  "precision_at_1": 0.0,
+  "recall_at_1": 0.0,
+  "precision_at_3": 0.0,
+  "recall_at_3": 0.0,
+  "precision_at_5": 0.0,
+  "recall_at_5": 0.0,
+  "mrr": 0.0,
+  "rouge_l": 0.06890365272916649,
+  "faithfulness": 0.8079031675879534,
+  "abstention_accuracy": 0.9
+}

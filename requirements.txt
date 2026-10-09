@@ -1,0 +1,44 @@
+# ===== RAG Juridique Souverain — Dépendances =====
+
+# --- Extraction et traitement PDF ---
+PyMuPDF>=1.23.0                # Extraction de texte depuis les PDF (fitz)
+
+# --- NLP et traitement de texte ---
+nltk>=3.8.1                    # Tokenisation, traitement linguistique
+regex>=2023.12.25              # Expressions régulières avancées
+unidecode>=1.3.7               # Normalisation Unicode
+
+# --- Embeddings et modèles ---
+sentence-transformers>=2.2.2   # Modèles d'embeddings multilingues
+transformers>=4.36.0           # HuggingFace Transformers
+torch>=2.1.0                   # PyTorch (backend)
+
+# --- Base de données vectorielle ---
+faiss-cpu>=1.7.4               # Index vectoriel FAISS (version CPU)
+
+# --- LLM local ---
+ollama>=0.1.0                  # Client Python pour Ollama
+langchain>=0.1.0               # Orchestration LLM
+langchain-community>=0.0.10   # Intégrations communautaires LangChain
+
+# --- Interface utilisateur ---
+streamlit>=1.29.0              # Interface web interactive
+
+# --- Évaluation ---
+rouge-score>=0.1.2             # Métriques ROUGE
+scikit-learn>=1.3.0            # Métriques de classification
+
+# --- Configuration ---
+PyYAML>=6.0.1                  # Lecture fichiers YAML
+
+# --- Logging et utilitaires ---
+tqdm>=4.66.0                   # Barres de progression
+loguru>=0.7.0                  # Logging avancé
+
+# --- Tests ---
+pytest>=7.4.0                  # Framework de tests
+pytest-cov>=4.1.0              # Couverture de tests
+
+# --- Données ---
+pandas>=2.1.0                  # Manipulation de données
+numpy>=1.24.0                  # Calculs numériques

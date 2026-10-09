@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Quelle est la durée du congé de maternité au Maroc ?",
+    "expected_answer": "Selon l'article 152 du Code du travail (Loi 65-99), la salariée bénéficie d'un congé de maternité de 14 semaines.",
+    "expected_sources": ["Code du travail, Article 152"],
+    "category": "congés"
+  },
+  {
+    "id": 2,
+    "question": "Quel est le salaire minimum au Maroc ?",
+    "expected_answer": "Le salaire minimum (SMIG) est fixé par décret. L'article 356 du Code du travail prévoit que le salaire minimum est déterminé par voie réglementaire.",
+    "expected_sources": ["Code du travail, Article 356"],
+    "category": "salaire"
+  },
+  {
+    "id": 3,
+    "question": "Combien de jours de congé annuel a un salarié au Maroc ?",
+    "expected_answer": "Selon l'article 231 du Code du travail, le salarié a droit à un congé annuel payé d'un jour et demi de travail effectif par mois de service, soit 18 jours ouvrables par an.",
+    "expected_sources": ["Code du travail, Article 231"],
+    "category": "congés"
+  },
+  {
+    "id": 4,
+    "question": "Quelle est la durée légale du travail au Maroc ?",
+    "expected_answer": "Selon l'article 184 du Code du travail, la durée normale de travail est fixée à 2496 heures par année ou 44 heures par semaine.",
+    "expected_sources": ["Code du travail, Article 184"],
+    "category": "durée_travail"
+  },
+  {
+    "id": 5,
+    "question": "Quelles sont les conditions de licenciement au Maroc ?",
+    "expected_answer": "Les articles 35 à 42 du Code du travail encadrent le licenciement. Le licenciement doit être justifié par un motif valable lié à l'aptitude ou à la conduite du salarié, ou fondé sur les nécessités de fonctionnement de l'entreprise.",
+    "expected_sources": ["Code du travail, Articles 35-42"],
+    "category": "licenciement"
+  },
+  {
+    "id": 6,
+    "question": "À partir de quel âge peut-on travailler au Maroc ?",
+    "expected_answer": "Selon l'article 143 du Code du travail, les mineurs ne peuvent être employés ni être admis dans les entreprises ou chez les employeurs avant l'âge de quinze ans révolus.",
+    "expected_sources": ["Code du travail, Article 143"],
+    "category": "travail_mineurs"
+  },
+  {
+    "id": 7,
+    "question": "Quelle est la période d'essai pour un CDI au Maroc ?",
+    "expected_answer": "Selon l'article 13 du Code du travail, la période d'essai pour un contrat à durée indéterminée est fixée à : 3 mois pour les cadres, 1 mois et demi pour les employés, et 15 jours pour les ouvriers.",
+    "expected_sources": ["Code du travail, Article 13"],
+    "category": "contrat"
+  },
+  {
+    "id": 8,
+    "question": "Comment fonctionne la retraite au Maroc ?",
+    "expected_answer": "Je ne dispose pas de cette information dans les textes consultés. Le Code du travail ne détaille pas le régime de retraite qui est régi par des textes spécifiques (CNSS, CIMR).",
+    "expected_sources": [],
+    "category": "abstention"
+  },
+  {
+    "id": 9,
+    "question": "Quels sont les jours fériés au Maroc ?",
+    "expected_answer": "L'article 217 du Code du travail prévoit que les jours de fêtes payés sont fixés par voie réglementaire. Le salarié a droit à ces jours fériés avec maintien de sa rémunération.",
+    "expected_sources": ["Code du travail, Article 217"],
+    "category": "congés"
+  },
+  {
+    "id": 10,
+    "question": "Quel est le délai de préavis en cas de démission ?",
+    "expected_answer": "Selon l'article 43 du Code du travail, le délai de préavis est fixé par les textes législatifs, le contrat de travail, la convention collective, le règlement intérieur ou les usages.",
+    "expected_sources": ["Code du travail, Article 43"],
+    "category": "contrat"
+  }
+]

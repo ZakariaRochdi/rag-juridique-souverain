@@ -1,0 +1,298 @@
+2026-09-21 02:36:46 | INFO     | __main__:cmd_ingest:76 - ============================================================
+2026-09-21 02:36:46 | INFO     | __main__:cmd_ingest:77 - ÉTAPE 1-2 : Ingestion du corpus juridique
+2026-09-21 02:36:46 | INFO     | __main__:cmd_ingest:78 - ============================================================
+2026-09-21 02:36:46 | INFO     | __main__:cmd_ingest:84 - 📄 Extraction du texte depuis les PDF...
+2026-09-21 02:36:46 | INFO     | corpus.extraction:extract_all_documents:100 - 📂 1 fichier(s) PDF trouvé(s) dans data/raw
+2026-09-21 02:36:46 | INFO     | corpus.extraction:extract_text_from_pdf:42 - Extraction de : code-travail-maroc.pdf
+2026-09-21 02:36:47 | ERROR    | corpus.extraction:extract_all_documents:108 - Erreur lors de l'extraction de code-travail-maroc.pdf : document closed
+2026-09-21 02:36:47 | INFO     | corpus.extraction:extract_all_documents:111 - ✅ 0 document(s) extrait(s) avec succès
+2026-09-21 02:36:47 | INFO     | __main__:cmd_ingest:86 -    → 0 document(s) extrait(s)
+2026-09-21 02:36:47 | INFO     | __main__:cmd_ingest:89 - 🧹 Nettoyage et normalisation...
+2026-09-21 02:36:47 | INFO     | corpus.nettoyage:clean_all_documents:185 - 🧹 Nettoyage de 0 document(s)...
+2026-09-21 02:36:47 | INFO     | corpus.nettoyage:clean_all_documents:198 - ✅ 0 document(s) nettoyé(s)
+2026-09-21 02:36:47 | INFO     | __main__:cmd_ingest:91 -    → 0 document(s) nettoyé(s)
+2026-09-21 02:36:47 | INFO     | __main__:cmd_ingest:94 - ✂️ Découpage en chunks...
+2026-09-21 02:36:47 | INFO     | corpus.decoupage:chunk_all_documents:263 - ✂️ Découpage de 0 document(s)...
+2026-09-21 02:36:47 | INFO     | corpus.decoupage:chunk_all_documents:264 -    Stratégie : article, taille cible : 500 tokens
+2026-09-21 02:36:47 | INFO     | corpus.decoupage:chunk_all_documents:291 - ✅ Total : 0 chunk(s) créés
+2026-09-21 02:36:47 | INFO     | __main__:cmd_ingest:96 -    → 0 chunk(s) créé(s)
+2026-09-21 02:36:47 | SUCCESS  | __main__:cmd_ingest:105 - ✅ Corpus ingéré et sauvegardé dans data\processed\chunks.json
+2026-09-21 02:37:17 | INFO     | __main__:cmd_ingest:76 - ============================================================
+2026-09-21 02:37:17 | INFO     | __main__:cmd_ingest:77 - ÉTAPE 1-2 : Ingestion du corpus juridique
+2026-09-21 02:37:17 | INFO     | __main__:cmd_ingest:78 - ============================================================
+2026-09-21 02:37:17 | INFO     | __main__:cmd_ingest:84 - 📄 Extraction du texte depuis les PDF...
+2026-09-21 02:37:17 | INFO     | corpus.extraction:extract_all_documents:101 - 📂 1 fichier(s) PDF trouvé(s) dans data/raw
+2026-09-21 02:37:17 | INFO     | corpus.extraction:extract_text_from_pdf:42 - Extraction de : code-travail-maroc.pdf
+2026-09-21 02:37:18 | INFO     | corpus.extraction:extract_text_from_pdf:71 -    → 129/129 pages extraites (367248 caractères)
+2026-09-21 02:37:18 | INFO     | corpus.extraction:extract_all_documents:112 - ✅ 1 document(s) extrait(s) avec succès
+2026-09-21 02:37:18 | INFO     | __main__:cmd_ingest:86 -    → 1 document(s) extrait(s)
+2026-09-21 02:37:18 | INFO     | __main__:cmd_ingest:89 - 🧹 Nettoyage et normalisation...
+2026-09-21 02:37:18 | INFO     | corpus.nettoyage:clean_all_documents:185 - 🧹 Nettoyage de 1 document(s)...
+2026-09-21 02:37:18 | INFO     | corpus.nettoyage:clean_all_documents:198 - ✅ 1 document(s) nettoyé(s)
+2026-09-21 02:37:18 | INFO     | __main__:cmd_ingest:91 -    → 1 document(s) nettoyé(s)
+2026-09-21 02:37:18 | INFO     | __main__:cmd_ingest:94 - ✂️ Découpage en chunks...
+2026-09-21 02:37:18 | INFO     | corpus.decoupage:chunk_all_documents:263 - ✂️ Découpage de 1 document(s)...
+2026-09-21 02:37:18 | INFO     | corpus.decoupage:chunk_all_documents:264 -    Stratégie : article, taille cible : 500 tokens
+2026-09-21 02:37:18 | INFO     | corpus.decoupage:chunk_all_documents:281 -    → code-travail-maroc.pdf : 1003 chunk(s)
+2026-09-21 02:37:18 | INFO     | corpus.decoupage:chunk_all_documents:291 - ✅ Total : 1003 chunk(s) créés
+2026-09-21 02:37:18 | INFO     | __main__:cmd_ingest:96 -    → 1003 chunk(s) créé(s)
+2026-09-21 02:37:18 | SUCCESS  | __main__:cmd_ingest:105 - ✅ Corpus ingéré et sauvegardé dans data\processed\chunks.json
+2026-09-21 02:37:30 | INFO     | __main__:cmd_evaluate:166 - ============================================================
+2026-09-21 02:37:30 | INFO     | __main__:cmd_evaluate:167 - ÉTAPE 7 : Évaluation du système
+2026-09-21 02:37:30 | INFO     | __main__:cmd_evaluate:168 - ============================================================
+2026-09-21 02:38:33 | INFO     | evaluation.run_eval:run_evaluation:197 - ============================================================
+2026-09-21 02:38:33 | INFO     | evaluation.run_eval:run_evaluation:198 - 🚀 Début de l'évaluation du système RAG
+2026-09-21 02:38:33 | INFO     | evaluation.run_eval:run_evaluation:199 - ============================================================
+2026-09-21 02:38:33 | INFO     | evaluation.run_eval:load_qa_dataset:49 - 📂 10 question(s) de référence chargée(s)
+2026-09-21 02:55:15 | INFO     | __main__:cmd_index:116 - ============================================================
+2026-09-21 02:55:15 | INFO     | __main__:cmd_index:117 - ÉTAPE 3 : Construction de la base de connaissances
+2026-09-21 02:55:15 | INFO     | __main__:cmd_index:118 - ============================================================
+2026-09-21 02:55:15 | INFO     | indexation.build_index:build_vector_index:191 - 🚀 Début de la construction de la base vectorielle
+2026-09-21 02:55:15 | INFO     | indexation.build_index:load_chunks:61 - 📂 1003 chunk(s) chargé(s) depuis data\processed\chunks.json
+2026-09-21 02:55:15 | INFO     | indexation.build_index:generate_embeddings:88 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-09-21 02:58:28 | INFO     | __main__:cmd_ingest:80 - ============================================================
+2026-09-21 02:58:28 | INFO     | __main__:cmd_ingest:81 - ÉTAPE 1-2 : Ingestion du corpus juridique
+2026-09-21 02:58:28 | INFO     | __main__:cmd_ingest:82 - ============================================================
+2026-09-21 02:58:28 | INFO     | __main__:cmd_ingest:88 - 📄 Extraction du texte depuis les PDF...
+2026-09-21 02:58:28 | INFO     | corpus.extraction:extract_all_documents:101 - 📂 1 fichier(s) PDF trouvé(s) dans data/raw
+2026-09-21 02:58:28 | INFO     | corpus.extraction:extract_text_from_pdf:42 - Extraction de : code-travail-maroc.pdf
+2026-09-21 02:58:29 | INFO     | corpus.extraction:extract_text_from_pdf:71 -    → 129/129 pages extraites (367248 caractères)
+2026-09-21 02:58:29 | INFO     | corpus.extraction:extract_all_documents:112 - ✅ 1 document(s) extrait(s) avec succès
+2026-09-21 02:58:29 | INFO     | __main__:cmd_ingest:90 -    → 1 document(s) extrait(s)
+2026-09-21 02:58:29 | INFO     | __main__:cmd_ingest:93 - 🧹 Nettoyage et normalisation...
+2026-09-21 02:58:29 | INFO     | corpus.nettoyage:clean_all_documents:185 - 🧹 Nettoyage de 1 document(s)...
+2026-09-21 02:58:29 | INFO     | corpus.nettoyage:clean_all_documents:198 - ✅ 1 document(s) nettoyé(s)
+2026-09-21 02:58:29 | INFO     | __main__:cmd_ingest:95 -    → 1 document(s) nettoyé(s)
+2026-09-21 02:58:29 | INFO     | __main__:cmd_ingest:98 - ✂️ Découpage en chunks...
+2026-09-21 02:58:29 | INFO     | corpus.decoupage:chunk_all_documents:263 - ✂️ Découpage de 1 document(s)...
+2026-09-21 02:58:29 | INFO     | corpus.decoupage:chunk_all_documents:264 -    Stratégie : article, taille cible : 500 tokens
+2026-09-21 02:58:29 | INFO     | corpus.decoupage:chunk_all_documents:281 -    → code-travail-maroc.pdf : 1003 chunk(s)
+2026-09-21 02:58:29 | INFO     | corpus.decoupage:chunk_all_documents:291 - ✅ Total : 1003 chunk(s) créés
+2026-09-21 02:58:29 | INFO     | __main__:cmd_ingest:100 -    → 1003 chunk(s) créé(s)
+2026-09-21 02:58:29 | SUCCESS  | __main__:cmd_ingest:109 - ✅ Corpus ingéré et sauvegardé dans data\processed\chunks.json
+2026-10-07 15:19:35 | INFO     | __main__:cmd_serve:187 - ============================================================
+2026-10-07 15:19:35 | INFO     | __main__:cmd_serve:188 - ÉTAPE 6 : Lancement de l'interface Streamlit
+2026-10-07 15:19:35 | INFO     | __main__:cmd_serve:189 - ============================================================
+2026-10-07 15:26:52 | INFO     | __main__:cmd_index:116 - ============================================================
+2026-10-07 15:26:52 | INFO     | __main__:cmd_index:117 - ÉTAPE 3 : Construction de la base de connaissances
+2026-10-07 15:26:52 | INFO     | __main__:cmd_index:118 - ============================================================
+2026-10-07 15:26:52 | INFO     | indexation.build_index:build_vector_index:191 - 🚀 Début de la construction de la base vectorielle
+2026-10-07 15:26:52 | INFO     | indexation.build_index:load_chunks:61 - 📂 1003 chunk(s) chargé(s) depuis data\processed\chunks.json
+2026-10-07 15:26:52 | INFO     | indexation.build_index:generate_embeddings:88 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 15:56:04 | INFO     | __main__:cmd_index:116 - ============================================================
+2026-10-07 15:56:04 | INFO     | __main__:cmd_index:117 - ÉTAPE 3 : Construction de la base de connaissances
+2026-10-07 15:56:04 | INFO     | __main__:cmd_index:118 - ============================================================
+2026-10-07 15:56:04 | INFO     | indexation.build_index:build_vector_index:191 - 🚀 Début de la construction de la base vectorielle
+2026-10-07 15:56:04 | INFO     | indexation.build_index:load_chunks:61 - 📂 1003 chunk(s) chargé(s) depuis data\processed\chunks.json
+2026-10-07 15:56:04 | INFO     | indexation.build_index:generate_embeddings:88 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 18:05:55 | INFO     | indexation.build_index:generate_embeddings:97 -    → Préfixe 'passage:' ajouté pour le modèle E5
+2026-10-07 18:05:55 | INFO     | indexation.build_index:generate_embeddings:99 - 📊 Génération des embeddings pour 1003 chunk(s) (batch_size=32)...
+2026-10-07 18:09:54 | INFO     | __main__:cmd_index:116 - ============================================================
+2026-10-07 18:09:54 | INFO     | __main__:cmd_index:117 - ÉTAPE 3 : Construction de la base de connaissances
+2026-10-07 18:09:54 | INFO     | __main__:cmd_index:118 - ============================================================
+2026-10-07 18:09:54 | INFO     | indexation.build_index:build_vector_index:191 - 🚀 Début de la construction de la base vectorielle
+2026-10-07 18:09:54 | INFO     | indexation.build_index:load_chunks:61 - 📂 1003 chunk(s) chargé(s) depuis data\processed\chunks.json
+2026-10-07 18:09:54 | INFO     | indexation.build_index:generate_embeddings:88 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 18:10:00 | INFO     | indexation.build_index:generate_embeddings:97 -    → Préfixe 'passage:' ajouté pour le modèle E5
+2026-10-07 18:10:00 | INFO     | indexation.build_index:generate_embeddings:99 - 📊 Génération des embeddings pour 1003 chunk(s) (batch_size=32)...
+2026-10-07 18:12:42 | INFO     | indexation.build_index:generate_embeddings:112 -    → Shape des embeddings : (1003, 768)
+2026-10-07 18:12:42 | INFO     | indexation.build_index:create_faiss_index:131 - 🏗️ Création de l'index FAISS (dim=768)...
+2026-10-07 18:12:42 | INFO     | indexation.build_index:create_faiss_index:137 -    → 1003 vecteurs indexés
+2026-10-07 18:12:42 | INFO     | indexation.build_index:save_index:160 - 💾 Index FAISS sauvegardé : data\vector_store\faiss_index.bin
+2026-10-07 18:12:42 | INFO     | indexation.build_index:save_index:176 - 💾 Métadonnées sauvegardées : data\vector_store\chunks_metadata.pkl
+2026-10-07 18:12:42 | SUCCESS  | indexation.build_index:build_vector_index:209 - ✅ Base vectorielle construite avec succès : 1003 vecteurs de dimension 768
+2026-10-07 18:12:42 | SUCCESS  | __main__:cmd_index:124 - ✅ Index vectoriel construit avec succès
+2026-10-07 18:16:54 | INFO     | __main__:cmd_query:132 - ============================================================
+2026-10-07 18:16:54 | INFO     | __main__:cmd_query:133 - ÉTAPES 4-5 : Recherche et génération
+2026-10-07 18:16:54 | INFO     | __main__:cmd_query:134 - ============================================================
+2026-10-07 18:16:54 | INFO     | __main__:cmd_query:135 - ❓ Question : Quelle est la durée du congé de maternité ?
+2026-10-07 18:16:54 | INFO     | retrieval.retriever:__init__:73 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 18:17:01 | INFO     | retrieval.retriever:_load_index:94 - 📂 Index FAISS chargé : 1003 vecteurs
+2026-10-07 18:17:01 | INFO     | retrieval.retriever:_load_index:106 -    → 1003 chunk(s) de métadonnées chargé(s)
+2026-10-07 18:17:01 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité ?...' (top_k=5)
+2026-10-07 18:17:01 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 18:17:01 | INFO     | __main__:cmd_query:145 -    → 5 passage(s) pertinent(s) trouvé(s)
+2026-10-07 18:17:01 | WARNING  | generation.generateur:_init_llm:76 - Package ollama non installé. Utilisation du mode fallback (template de réponse).
+2026-10-07 18:17:01 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelle est la durée du congé de maternité ?...'
+2026-10-07 18:17:01 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 18:31:58 | INFO     | __main__:cmd_query:132 - ============================================================
+2026-10-07 18:31:58 | INFO     | __main__:cmd_query:133 - ÉTAPES 4-5 : Recherche et génération
+2026-10-07 18:31:58 | INFO     | __main__:cmd_query:134 - ============================================================
+2026-10-07 18:31:58 | INFO     | __main__:cmd_query:135 - ❓ Question : Quelle est la durée du congé de maternité ?
+2026-10-07 18:31:58 | INFO     | retrieval.retriever:__init__:73 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 18:32:03 | INFO     | retrieval.retriever:_load_index:94 - 📂 Index FAISS chargé : 1003 vecteurs
+2026-10-07 18:32:03 | INFO     | retrieval.retriever:_load_index:106 -    → 1003 chunk(s) de métadonnées chargé(s)
+2026-10-07 18:32:03 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité ?...' (top_k=5)
+2026-10-07 18:32:03 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 18:32:03 | INFO     | __main__:cmd_query:145 -    → 5 passage(s) pertinent(s) trouvé(s)
+2026-10-07 18:32:05 | INFO     | generation.generateur:_init_llm:72 - 🤖 LLM initialisé : Ollama (mistral)
+2026-10-07 18:32:05 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelle est la durée du congé de maternité ?...'
+2026-10-07 18:32:07 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 18:32:07 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 18:32:07 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 18:46:55 | INFO     | __main__:cmd_serve:187 - ============================================================
+2026-10-07 18:46:55 | INFO     | __main__:cmd_serve:188 - ÉTAPE 6 : Lancement de l'interface Streamlit
+2026-10-07 18:46:55 | INFO     | __main__:cmd_serve:189 - ============================================================
+2026-10-07 19:09:52 | INFO     | __main__:cmd_serve:187 - ============================================================
+2026-10-07 19:09:52 | INFO     | __main__:cmd_serve:188 - ÉTAPE 6 : Lancement de l'interface Streamlit
+2026-10-07 19:09:52 | INFO     | __main__:cmd_serve:189 - ============================================================
+2026-10-07 19:20:17 | INFO     | __main__:cmd_evaluate:170 - ============================================================
+2026-10-07 19:20:17 | INFO     | __main__:cmd_evaluate:171 - ÉTAPE 7 : Évaluation du système
+2026-10-07 19:20:17 | INFO     | __main__:cmd_evaluate:172 - ============================================================
+2026-10-07 19:20:33 | INFO     | evaluation.run_eval:run_evaluation:197 - ============================================================
+2026-10-07 19:20:33 | INFO     | evaluation.run_eval:run_evaluation:198 - 🚀 Début de l'évaluation du système RAG
+2026-10-07 19:20:33 | INFO     | evaluation.run_eval:run_evaluation:199 - ============================================================
+2026-10-07 19:20:33 | INFO     | evaluation.run_eval:load_qa_dataset:49 - 📂 10 question(s) de référence chargée(s)
+2026-10-07 19:20:33 | INFO     | retrieval.retriever:__init__:73 - 🤖 Chargement du modèle d'embeddings : intfloat/multilingual-e5-base
+2026-10-07 19:20:42 | INFO     | retrieval.retriever:_load_index:94 - 📂 Index FAISS chargé : 1003 vecteurs
+2026-10-07 19:20:42 | INFO     | retrieval.retriever:_load_index:106 -    → 1003 chunk(s) de métadonnées chargé(s)
+2026-10-07 19:20:46 | INFO     | generation.generateur:_init_llm:72 - 🤖 LLM initialisé : Ollama (mistral)
+2026-10-07 19:20:46 | INFO     | evaluation.run_eval:evaluate_retrieval:69 - 🔍 Évaluation du retrieval...
+2026-10-07 19:20:46 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité au Maroc ?...' (top_k=1)
+2026-10-07 19:20:46 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:46 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le salaire minimum au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée légale du travail au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelles sont les conditions de licenciement au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'À partir de quel âge peut-on travailler au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quels sont les jours fériés au Maroc ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le délai de préavis en cas de démission ?...' (top_k=1)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 1 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité au Maroc ?...' (top_k=3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:47 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le salaire minimum au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée légale du travail au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelles sont les conditions de licenciement au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'À partir de quel âge peut-on travailler au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quels sont les jours fériés au Maroc ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le délai de préavis en cas de démission ?...' (top_k=3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 3 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité au Maroc ?...' (top_k=5)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:48 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le salaire minimum au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée légale du travail au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelles sont les conditions de licenciement au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'À partir de quel âge peut-on travailler au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quels sont les jours fériés au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le délai de préavis en cas de démission ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité au Maroc ?...' (top_k=5)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:49 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le salaire minimum au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée légale du travail au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelles sont les conditions de licenciement au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'À partir de quel âge peut-on travailler au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quels sont les jours fériés au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le délai de préavis en cas de démission ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | evaluation.run_eval:evaluate_retrieval:122 -    → Métriques de retrieval calculées : 7 métriques
+2026-10-07 19:20:50 | INFO     | evaluation.run_eval:evaluate_generation:142 - 📝 Évaluation de la génération...
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée du congé de maternité au Maroc ?...' (top_k=5)
+2026-10-07 19:20:50 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:50 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelle est la durée du congé de maternité au Maroc ?...'
+2026-10-07 19:20:52 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:20:52 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:20:52 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:20:52 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le salaire minimum au Maroc ?...' (top_k=5)
+2026-10-07 19:20:53 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:53 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quel est le salaire minimum au Maroc ?...'
+2026-10-07 19:20:55 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:20:55 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:20:55 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:20:55 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...' (top_k=5)
+2026-10-07 19:20:55 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:55 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Combien de jours de congé annuel a un salarié au Maroc ?...'
+2026-10-07 19:20:57 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:20:57 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:20:57 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:20:57 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la durée légale du travail au Maroc ?...' (top_k=5)
+2026-10-07 19:20:57 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:57 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelle est la durée légale du travail au Maroc ?...'
+2026-10-07 19:20:59 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:20:59 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:20:59 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:20:59 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelles sont les conditions de licenciement au Maroc ?...' (top_k=5)
+2026-10-07 19:20:59 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:20:59 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelles sont les conditions de licenciement au Maroc ?...'
+2026-10-07 19:21:01 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:01 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:01 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:01 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'À partir de quel âge peut-on travailler au Maroc ?...' (top_k=5)
+2026-10-07 19:21:02 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:21:02 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'À partir de quel âge peut-on travailler au Maroc ?...'
+2026-10-07 19:21:04 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:04 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:04 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:04 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...' (top_k=5)
+2026-10-07 19:21:04 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:21:04 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quelle est la période d'essai pour un CDI au Maroc ?...'
+2026-10-07 19:21:06 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:06 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:06 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:06 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Comment fonctionne la retraite au Maroc ?...' (top_k=5)
+2026-10-07 19:21:06 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:21:06 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Comment fonctionne la retraite au Maroc ?...'
+2026-10-07 19:21:08 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:08 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:08 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:08 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quels sont les jours fériés au Maroc ?...' (top_k=5)
+2026-10-07 19:21:08 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:21:08 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quels sont les jours fériés au Maroc ?...'
+2026-10-07 19:21:10 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:10 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:10 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:10 | INFO     | retrieval.retriever:search:153 - 🔍 Recherche pour : 'Quel est le délai de préavis en cas de démission ?...' (top_k=5)
+2026-10-07 19:21:10 | INFO     | retrieval.retriever:search:181 -    → 5 résultat(s) au-dessus du seuil (0.3)
+2026-10-07 19:21:10 | INFO     | generation.generateur:generate:228 - 📝 Génération de la réponse pour : 'Quel est le délai de préavis en cas de démission ?...'
+2026-10-07 19:21:12 | ERROR    | generation.generateur:generate:279 - Erreur lors de la génération : Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-10-07 19:21:12 | INFO     | generation.generateur:generate:280 - Basculement vers le mode fallback
+2026-10-07 19:21:12 | SUCCESS  | generation.generateur:generate:283 - ✅ Réponse générée avec succès
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:evaluate_generation:180 -    → Métriques de génération calculées : 3 métriques
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:222 - 
+📊 Résultats de l'évaluation :
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    abstention_accuracy: 0.9000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    faithfulness: 0.8079
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    mrr: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    precision_at_1: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    precision_at_3: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    precision_at_5: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    recall_at_1: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    recall_at_3: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    recall_at_5: 0.0000
+2026-10-07 19:21:12 | INFO     | evaluation.run_eval:run_evaluation:224 -    rouge_l: 0.0689
+2026-10-07 19:21:12 | SUCCESS  | evaluation.run_eval:run_evaluation:231 - ✅ Résultats sauvegardés dans data\qa_eval\eval_results.json
